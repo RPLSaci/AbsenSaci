@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SMAN 1 CIKAMPEK - ABSEN</title>
+   <link rel="stylesheet" href="./assets/css/main.css">
+   <link rel="shortcut icon" href="./assets/img/Logosaci.png" type="image/x-icon">
+   <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+   <script src="./assets/js/index.js" defer></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+
+<body class="min-h-[100vh]">
+    <div id="content-wrapper" class="bg-white min-h-[100vh]">
+        <section class="relative montserrat-regular p-8 flex items-center justify-center bg-cover bg-center text-center w-full" style="background-color: #f1f1f1;">
+            <div class="m-auto block md:inline-flex text-center" id="landing">
+                <img src="./assets/img/Logosaci.png" class="m-auto w-36 h-36" alt="logo">
+                <div
+                    class="container pt-3 text-center text-6xl font-bold font-sans m-auto mx-0 sm:mx-6">
+                    <h1 class="text-black text-3xl montserrat-regular" >Absensi SMAN 1 Cikampek<br> <h3 class="text-3xl montserrat-semibold" id="tgl"></h3></h1>
+                    <span class="text-black text-4xl montserrat-semibold" id="JAM"></span>
+                </div>
+        </section>
+        <section class="relative montserrat-regular p-8 flex items-center w-[60%] m-auto justify-center bg-cover bg-center text-center w-full">
+            <div class="m-auto block md:inline-flex text-center" id="landing">
+                <img src="./assets/img/aw lucu.png" class="m-auto w-48 h-48" alt="logo">
+                <div class="text-center text-2xl font-semibold p-6 m-auto">
+                    <p>Silahkan tap kartu pelajar di mesin atau scan QR di kartu pelajar di kamera.</p>
+                </div>
+        </section>
+
+    </div>
+</body>
+
+
+<footer class="footer footer-center p-10 text-neutral-content montserrat-regular" style="background-color: #f1f1f1;">
+    <aside>
+        <img src="./assets/img/rpl.png" class="rounded-lg w-[80px]">
+      <p class="font-bold">
+        Agrifuture <br>Platform Pertanianmu.
+      </p> 
+      <p>Copyright RPLSACI© 2024 - All right reserved</p>
+    </aside> 
+    <nav>
+      <div class="grid grid-flow-col gap-4">
+      </div>
+    </nav>
+  </footer>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+        },
+    });
+</script>
+<!-- PLACEHOLDER -->
+<div class="hidden">
+   <a href="#"
+      class="block mt-12 max-w-sm p-6 bg-white border border-amber-200 rounded-lg shadow-md hover:bg-amber-100 dark:bg-amber-800 dark:border-amber-700 dark:hover:bg-amber-700">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-amber-900 text-black">placeholder</h5>
+      <p class="font-normal text-amber-700 dark:text-amber-400">placeholder</p>
+   </a>
+   <a
+      class="block mt-12 max-w-sm p-6 bg-white border border-amber-200 rounded-lg shadow-md hover:bg-amber-100 dark:bg-amber-800 dark:border-amber-700 dark:hover:bg-amber-700">
+      <h5 class="mb-2 text-2xl font-bold tracking-tight text-amber-900 text-black">${data.name}</h5>
+      <p class="font-normal text-amber-700 dark:text-amber-400">${getCountryName(data.lang)}</p>
+   </a>
+   <a
+      class="flex items-center p-2 text-base font-normal text-amber-900 rounded-lg text-black hover:bg-amber-100 dark:hover:bg-amber-700">
+      <span class="ml-3">${data.name}</span>
+   </a>
+</div>
+
+</html>
